@@ -1,0 +1,211 @@
+body{
+    font-family: sans-serif;
+    margin:0;
+    padding:0;
+    background-color: black;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width:85%;
+    margin:auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+
+    width:120px;
+    cursor:pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative; 
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #f1e9e9;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 5px; 
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background: #009688;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content1{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+.content2{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+
+.btn{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    column-gap: 3px;
+
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 2px solid #009688;
+    background: transparent;
+    font-weight: bold;
+    color: white;
+    position: relative; 
+    overflow: hidden;
+    z-index: 1;
+}
+
+button span {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    transition: 0.3s width;
+}
+
+button:hover span {
+    width: 100%; 
+}
+
+
+button span {
+    z-index: -1;
+}
+
+button:hover {
+    color: #fff; 
+}
+
+.footer{
+
+    height:100px;
+    background-color: black;
+    text-align: center;
+}
+
+h5{
+    color:white;
+}
+
+
+.hero{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.head{
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    margin:25px;
+}
+
+video {
+    width: 640px;
+    height: 360px;
+    border-radius: 15px; /* Adjust the value as needed for blunter edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow */
+}
+
+
+
+.review{
+
+    background-color: #e1eeed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:8px solid #009688;
+    
+
+}
+
+
+
+
+.footer p{
+    color:#009688;
+    cursor:pointer;
+}
+
+
+.footer p::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background: #009688;/*this part does the transition*/
+    left: 0;
+    bottom: -3px;
+    transition: width 0.3s;/*this part does the transition*/
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -ms-transition: width 0.3s;
+    -o-transition: width 0.3s;
+}
+
+.footer p:hover::after {
+    width: 100%;/*this part does the transition*/
+}
+
+
+
+
+
+
+
+ 
